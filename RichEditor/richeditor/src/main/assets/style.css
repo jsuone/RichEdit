@@ -1,0 +1,34 @@
+
+@charset "UTF-8";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: scroll;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  min-height:100%;
+}
+
+#editor {
+  display: table-cell;
+  outline: 0px solid transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*#editor[placeholder]：选择器部分，它选中了id为"editor"，并且具有"placeholder"属性的元素。
+:empty：一个伪类，它会选择那些没有任何子节点（包括文本节点）的元素。
+:not(:focus)：另一个伪类，它会选择那些没有被用户聚焦的元素。
+:before：一个伪元素，它会在被选中的元素前插入一个内容。
+content: attr(placeholder)：这是声明部分，它设置了插入的伪元素的内容，具体的内容是被选中元素的"placeholder"属性的值。
+opacity: .5：另一个声明，它设置了伪元素的透明度为0.5。
+在用户没有聚焦而且对应div内容为空的情况下，设置半透明的提示*/
+#editor[placeholder]:empty:not(:focus):before {
+  content: attr(placeholder);
+  opacity: .5;
+}

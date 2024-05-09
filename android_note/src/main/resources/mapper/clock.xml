@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.android_note.mapper.ClockMapper">
+    <resultMap id="ItemMap" type="com.example.android_note.entity.Item">
+        <id column="guid" property="UUID"/>
+        <result column="clock_name" property="backlog_name"/>
+        <result column="clock_time" property="backlog_time"/>
+        <result column="is_checked" property="isChecked"/>
+        <result column="is_repeat" property="isRepeat"/>
+        <result column="ssn" property="ssn"/>
+        <result column="is_del" property="isDel"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="user_guid" property="userGuid"/>
+    </resultMap>
+<delete id="deleteClockByGUID" parameterType="String">
+    delete from clock where guid = #{UUID}
+</delete>
+<insert id="insertClock" parameterType="com.example.android_note.entity.Item">
+    insert into clock(guid,clock_time,clock_name,is_checked,is_repeat,ssn,is_del,create_time,update_time,user_guid)
+    values(#{UUID},#{backlog_time},#{backlog_name},#{isChecked},#{isRepeat},#{ssn},#{isDel},#{createTime},#{updateTime},#{userGuid})
+</insert>
+<update id="updateClock" parameterType="com.example.android_note.entity.Item">
+    update clock set clock_time = #{backlog_time},clock_name = #{backlog_name},is_checked = #{isChecked},is_repeat = #{isRepeat},ssn = #{ssn},is_del = #{isDel},update_time = #{updateTime} where guid = #{UUID}
+</update>
+<select id="selectClockListByUserName" parameterType="String" resultMap="ItemMap">
+    select * from clock where user_guid = #{username}
+</select>
+</mapper>

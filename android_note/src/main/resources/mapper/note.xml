@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.android_note.mapper.NoteMapper">
+    <resultMap id="NoteMap" type="com.example.android_note.entity.NoteModel">
+        <id column="guid" property="guid"/>
+        <result column="theme" property="theme"/>
+        <result column="note_content" property="note_context"/>
+        <result column="title_guid" property="title_guid"/>
+        <result column="is_del" property="isDel"/>
+        <result column="ssn" property="ssn"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="user_guid" property="username"/>
+    </resultMap>
+<insert id="insertNote" parameterType="com.example.android_note.entity.NoteModel">
+    insert into note(guid,theme,note_content,is_del,ssn,create_time,update_time,user_guid)
+    values(#{guid},#{theme},#{note_context},#{isDel},#{ssn},#{createTime},#{updateTime},#{username})
+</insert>
+<insert id="insertNoteOfTitle" parameterType="com.example.android_note.entity.NoteModel">
+    insert into note_title (note_guid,title_guid) values(#{guid},#{title_guid})
+</insert>
+<update id="updateNote" parameterType="com.example.android_note.entity.NoteModel">
+    update note set theme = #{theme},note_content = #{note_context},is_del = #{isDel},ssn = #{ssn},update_time = #{updateTime} where guid = #{guid}
+</update>
+<update id="updateNoteOfTitle" parameterType="com.example.android_note.entity.NoteModel">
+    update note_title set title_guid = #{title_guid} where note_guid = #{guid}
+</update>
+<delete id="deleteNoteByGUID" parameterType="String">
+    delete from note where guid = #{guid}
+</delete>
+<select id="selectNoteListByUserName" parameterType="String" resultMap="NoteMap">
+    select * from note,note_title where note_title.note_guid = note.guid and user_guid = #{username} order By title_guid
+</select>
+</mapper>

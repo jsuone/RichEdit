@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    >
+    <CheckBox
+        android:id="@+id/clock_isEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="6"
+        >
+        <TextView
+            android:id="@+id/clock_remark"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/clock_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        >
+        <ImageButton
+            android:id="@+id/backlog_more_option"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backlog_more_option"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.SetSecurityFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入密保问题"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/set_new_security_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入问题"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入密保问题答案"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/set_new_security_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入答案"
+        />
+    <Button
+        android:id="@+id/set_new_security_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cycle_button_style"
+        android:text="确定"
+        />
+
+
+</LinearLayout>

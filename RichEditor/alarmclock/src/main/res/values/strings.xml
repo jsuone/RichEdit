@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">alarmclock</string>
+    <string name="setting_backlog_name">待办事务</string>
+</resources>

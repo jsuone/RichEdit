@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddNoteActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/purple_200"
+    >
+<ImageButton
+    android:id="@+id/note_add_cancel"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:scaleType="fitXY"
+    android:background="@android:color/transparent"
+    android:src="@drawable/module_editor_ic_undo"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <ImageButton
+        android:id="@+id/note_add_complete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gou"
+        />
+</LinearLayout>
+    <EditText
+        android:id="@+id/note_theme_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        />
+    <TextView
+        android:id="@+id/note_all_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.example.richeditor.RichEditor
+        android:id="@+id/note_editor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <com.example.richeditor.EditorOpMenuView
+        android:id="@+id/note_editor_op_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />
+</LinearLayout>

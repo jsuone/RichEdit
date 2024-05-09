@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alarmclock">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
+
+
+        <service
+            android:name=".AlarmIntentService"
+            android:exported="true"
+            android:foregroundServiceType="dataSync" />
+        <service android:name=".MyJobService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity
+            android:name=".BacklogCompileActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.android_note.mapper.TitleMapper">
+    <resultMap id="TitleMap" type="com.example.android_note.entity.TitleModel">
+        <id column="guid" property="guid"/>
+        <result column="title" property="title"/>
+        <result column="parent_id" property="parentID"/>
+        <result column="level" property="level"/>
+        <result column="is_open" property="isOpen"/>
+        <result column="isDel" property="isDel"/>
+        <result column="ssn" property="ssn"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="user_guid" property="username"/>
+    </resultMap>
+<insert id="insertTitle" parameterType="com.example.android_note.entity.TitleModel">
+    insert into title(guid,title,parent_id,level,is_open,isDel,ssn,create_time,update_time,user_guid)
+    values(#{guid},#{title},#{parentID},#{level},#{isOpen},#{isDel},#{ssn},#{createTime},#{updateTime},#{username})
+</insert>
+<update id="updateTitle" parameterType="com.example.android_note.entity.TitleModel">
+    update title set title = #{title},parent_id = #{parentID},level = #{level},is_open = #{isOpen},isDel = #{isDel},ssn = #{ssn},update_time = #{updateTime} where guid = #{guid}
+</update>
+<delete id="deleteTitleByGUID" parameterType="String">
+    delete from title where guid = #{guid}
+</delete>
+<select id="selectTitleListByUserName" parameterType="String" resultMap="TitleMap">
+    select * from title where user_guid = #{username} order by level asc
+</select>
+</mapper>

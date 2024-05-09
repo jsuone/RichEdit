@@ -1,0 +1,24 @@
+# 应用服务 WEB 访问端口 http://localhost:8081/res/images/hh/image_hh_4745ab1d-c03f-4eb9-bc3b-8315a4a8c9a7_1712654540475.jpg
+server:
+  port: 8081
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.entity
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/note
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    timeout: 10000
+    password: 123456
+  mvc:
+    static-path-pattern: /res/**
+  web:
+    resources:
+      static-locations:  classpath:/static/
+      chain:
+        cache: false

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.android_note.mapper.UserMapper">
+<resultMap id="userMap" type="com.example.android_note.entity.User">
+    <id column="id" property="id"/>
+    <result column="username" property="username"/>
+    <result column="password" property="password"/>
+    <result column="ssn" property="ssn"/>
+    <result column="lastupdatessn" property="lastUpdateSSN"/>
+    <result column="lastsynctime" property="lastSyncTime"/>
+    <result column="security_question" property="security_question"/>
+    <result column="security_answer" property="security_answer"/>
+    <result column="password_change_time" property="password_change_time"/>
+</resultMap>
+    <select id="getUserByUsername" parameterType="String" resultMap="userMap">
+        select * from user where username = #{username}
+    </select>
+    <select id="queryUserList" resultMap="userMap">
+        select username from user limit 50
+    </select>
+    <insert id="insertUser" parameterType="com.example.android_note.entity.User" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into user(username,password,ssn,lastupdatessn,lastsynctime,security_question,security_answer,password_change_time)
+        values(#{username},#{password},#{ssn},#{lastUpdateSSN},#{lastSyncTime},#{security_question},#{security_answer},#{password_change_time})
+    </insert>
+    <update id="updateUser" parameterType="com.example.android_note.entity.User">
+        update user set username=#{username},password=#{password},ssn=#{ssn},lastupdatessn=#{lastUpdateSSN},lastsynctime=#{lastSyncTime}
+        where username = #{username}
+    </update>
+    <update id="updatePassword" parameterType="com.example.android_note.entity.User">
+        update user set password=#{password},password_change_time=#{password_change_time} where username=#{username}
+    </update>
+    <update id="updateQuestion" parameterType="com.example.android_note.entity.User">
+        update user set security_question=#{security_question},security_answer=#{security_answer} where username=#{username}
+    </update>
+</mapper>

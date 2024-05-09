@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SetLockActivity">
+    <ImageButton
+        android:id="@+id/set_lock_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        />
+    <TextView
+        android:id="@+id/set_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="请输入打开应用密码"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/set_patter_lock_view"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        app:dotNormalSize="12dp"
+
+        app:pathWidth="4dp"
+        app:pathEndAnimationDuration="100"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:dotAnimationDuration="150"
+        app:dotCount="3"
+        app:normalStateColor="@color/black"
+        app:correctStateColor="@color/teal_200"
+        app:wrongStateColor="@color/pomegranate"
+        app:dotSelectedSize="50dp"
+        />
+
+</LinearLayout>

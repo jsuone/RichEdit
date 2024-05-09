@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="密保问题"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/check_security_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/check_security_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入答案"
+        />
+    <Button
+        android:id="@+id/check_security_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cycle_button_style"
+        android:text="确定"
+        />
+</LinearLayout>

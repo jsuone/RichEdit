@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/drawable/back_textview_press.xml" value="0.1115" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/drawable/backlog_setting_attr_style.xml" value="0.102" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/activity_backlog_compile.xml" value="0.2390625" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/activity_backlog_list.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/activity_backlog_setting.xml" value="0.2390625" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/item_group.xml" value="0.20811965811965813" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/layout_date_picker_segmentation.xml" value="0.1017126148705096" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/module_backlog_setting.xml" value="0.264" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/module_clock_wiget.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/alarmclock/src/main/res/layout/title_group.xml" value="0.20811965811965813" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.102" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable/cycle_button_style.xml" value="0.114" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable/cycle_view.xml" value="0.114" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable/icon_eye.xml" value="0.12" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable/isexpand.xml" value="0.102" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/drawable/textview_press.xml" value="0.1115" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_add_note.xml" value="0.16875" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_change_password.xml" value="0.16302083333333334" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_main_content.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_security_question.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_set_lock.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_test_backlog_list.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/activity_un_lock.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/dialog_create_title.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/dialog_selected_title.xml" value="0.264" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_backlog_list.xml" value="0.20726495726495728" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_check_password.xml" value="0.2390625" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_check_security.xml" value="0.2" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_set_password.xml" value="0.2390625" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/fragment_set_security.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/list_note_item.xml" value="0.2851985559566787" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/list_title.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/list_title_item.xml" value="0.4" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/my_notification_layout.xml" value="0.2947761194029851" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/navigation_main.xml" value="0.264" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/notification_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/layout/pull_to_refresh.xml" value="0.16" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/menu/clock_menu.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/menu/note_menu.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/app/src/main/res/menu/popup_menu.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/core/src/main/res/layout/common_mini.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/drawable/background_color_selector.xml" value="0.1" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/drawable/undo_bg.xml" value="0.1" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/layout/activity_editor_op_menu_view.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/layout/module_editor_item_font_size.xml" value="0.1640625" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/layout/module_editor_layout_bottom_list_dialog.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/lwy20/AndroidStudioProject/RichEditor/richeditor/src/main/res/layout/module_editor_op_menu_view.xml" value="0.22592592592592592" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/low_white"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/nv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_title"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycle_view"
+        android:layout_below="@id/nv_title"
+        />
+
+    <TextView
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@id/rv_title"
+        android:background="@drawable/cycle_view"
+        android:clickable="true"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:text="退出登录"
+        />
+    <TextView
+        android:id="@+id/changed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+
+        android:textSize="15dp"
+        android:background="@drawable/cycle_view"
+        android:textColor="@color/black"
+
+        android:text="修改密码"
+        android:layout_below="@id/log_out"
+        />
+    <TextView
+        android:id="@+id/set_security_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:padding="5dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/cycle_view"
+        android:text="设置密保"
+        android:layout_below="@id/changed_password"
+        />
+    <TextView
+        android:id="@+id/set_lock_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:padding="5dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/cycle_view"
+        android:text="设置应用锁"
+        android:layout_below="@id/set_security_question"
+        />
+</RelativeLayout>

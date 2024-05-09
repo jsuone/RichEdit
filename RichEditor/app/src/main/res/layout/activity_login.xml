@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+<TextView
+    android:id="@+id/login_activity_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:textSize="30dp"
+    android:text="@string/login_activity_name"
+    />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_activity_name"
+        android:hint="账户"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+<LinearLayout
+    android:id="@+id/password_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/username"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="@string/prompt_password"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        />
+    <ImageView
+        android:id="@+id/is_show_password"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_eye"
+        />
+</LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cycle_button_style"
+        android:layout_below="@id/password_linearlayout"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:text="@string/action_sign_in"
+   />
+
+    <Button
+        android:id="@+id/go_to_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/cycle_button_style"
+        android:layout_height="wrap_content"
+        android:text="注册新账户"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:maxHeight="30dp"
+        android:maxWidth="30dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="#00d8a0"
+        android:indeterminate="false"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
